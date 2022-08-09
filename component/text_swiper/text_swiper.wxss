@@ -1,0 +1,18 @@
+.swiper-box {
+    margin: 0 30rpx;
+    height: 150rpx;
+    line-height: 75rpx;
+    padding: 0 20rpx;
+    background-color: var(--themeColor);
+    border-radius: 10rpx;
+    /* overflow: hidden; */
+}
+
+.swiper-box .item {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;  
+}

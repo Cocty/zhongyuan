@@ -1,0 +1,27 @@
+<view class="wrapper_news">
+  <view class="news" wx:for="{{newsList}}" wx:key="id">
+    <image src="{{item.image_src}}" mode="widthFix"></image>
+    <view class="news_title">
+      <text user-select="{{true}}">{{item.title}}</text>
+    </view>
+    <!-- 日期 -->
+    <view class="date">
+      <view class="date_icon">
+        <text class="iconfont icon-xriqi"></text>
+      </view>
+      <view>
+        <text user-select="{{true}}">{{item.time}}</text>
+      </view>
+    </view>
+    <view class="news_content">
+      <text user-select="{{true}}">{{item.content}}</text>
+    </view>
+    <!-- 阅读更多 -->
+    <view class="news_more">
+      <navigator url="{{item.url}}" class="news_more_nav">
+        <text class="iconfont icon-xsanjiaoright"></text>
+        <text>阅读更多</text>
+      </navigator>
+    </view>
+  </view>
+</view>

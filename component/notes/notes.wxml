@@ -1,0 +1,13 @@
+<!-- component/notes.wxml -->
+<view class="notes">
+  <view class="liuyan">
+    <view class="title">
+      <text class="iconfont icon-xliuyan"></text>
+      <text>留言</text>
+    </view>
+  </view>
+  <veiw class="input">
+    <textarea class="comments_input" type="text" name="liuyan" placeholder="说说你想说的吧" />
+    <button class="sub_liuyan" form-type="submit">提交</button>
+  </veiw>
+</view>

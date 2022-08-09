@@ -1,0 +1,25 @@
+<view class="denglu">
+  <view class="user_image_wrap" wx:if="{{userInfo}}">
+    <image class="usr_bg" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+    <view class="usr_info">
+      <image class="usr_icon" src="{{userInfo.avatarUrl}}"></image>
+      <view class="usr_name">{{userInfo.nickName}}</view>
+      <button type="default" bindtap="nologin">退出登录</button>
+    </view>
+  </view>
+  <view class="uset_btn" wx:else>
+    <button type="default" bindtap="login" open-type="getUserInfo">登录</button>
+  </view>
+</view>
+<view class="notes">
+  <view class="notes_title">留言板</view>
+  <text_swiper textList="{{txtlist}}"></text_swiper>
+  <view class="notes_pale">
+    <notes notes="notes"></notes>
+  </view>
+</view>
+<view class="toolbar">
+  <view>
+    <button bindtap="to_us">关于我们</button>
+  </view>
+</view>

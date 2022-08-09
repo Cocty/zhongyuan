@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "text_swiper": "../../component/text_swiper/text_swiper"
+  },
+  "navigationBarTitleText": "社会救援"
+}

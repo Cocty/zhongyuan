@@ -1,0 +1,18 @@
+<!-- component/aixinqiang.wxml -->
+<view class="wrapper_loveWall">
+  <view class="lovewall_item" wx:for="{{srcList}}" wx:key="id">
+    <image src="{{item.src}}" mode="widthFix"></image>
+    <icon></icon>
+    <view class="loveWall">
+      <view>
+        <text class="lovewall_title" user-select="{{true}}">{{item.title}}</text>
+      </view>
+      <view>
+        <text class="lovewall_content" user-select="{{true}}">{{item.content}}</text>
+      </view>
+    </view>
+    <view class="lovewall_indeed_wrapper">
+      <navigator url="{{item.url}}" class="lovewall_indeed">查看更多</navigator>
+    </view>
+  </view>
+</view>

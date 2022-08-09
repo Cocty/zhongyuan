@@ -1,0 +1,6 @@
+/* pages/aixinqiang2/aixinqiang2.wxss */
+@import "../../style/aixinqiang.wxss";
+
+.title {
+  color: #800000;
+}

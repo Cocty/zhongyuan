@@ -1,0 +1,71 @@
+/* component/news.wxss */
+@import "../../style/iconfont.wxss";
+
+.wrapper_news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+.news {
+  border-radius: 20rpx;
+  background-color: whitesmoke;
+  margin: 20rpx;
+}
+
+.news image {
+  border-radius: 20rpx;
+}
+
+.news_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  font-weight: bolder;
+  margin-bottom: 20rpx;
+}
+
+.date .date_icon {
+  height: fit-content;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  border-bottom: grey solid 1rpx;
+  border-top: grey solid 1rpx;
+  margin: 10rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_more {
+  margin: 20rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_more_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  background-color: var(--themeColor);
+  margin: 10rpx auto;
+  color: white;
+}
+
+.news_more_nav image {
+  width: 30rpx;
+  height: 100%;
+}

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/news/index",
+    "pages/help/help",
+    "pages/mine/mine",
+    "pages/jianjie/jianjie",
+    "pages/aixinqiang1/aixinqiang1",
+    "pages/aixinqiang2/aixinqiang2",
+    "pages/aixinqiang3/aixinqiang3",
+    "pages/aixinqiang4/aixinqiang4",
+    "pages/news1/news1",
+    "pages/news2/news2",
+    "pages/news3/news3",
+    "pages/new_details/view"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "众援",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/首页.png",
+        "selectedIconPath": "icon/首页1.png"
+      },
+      {
+        "pagePath": "pages/news/index",
+        "text": "新闻",
+        "iconPath": "icon/24gl-newspaper.png",
+        "selectedIconPath": "icon/24gl-newspaper (1).png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "援助",
+        "iconPath": "icon/icon_救援.png",
+        "selectedIconPath": "icon/icon_救援 (1).png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/互动.png",
+        "selectedIconPath": "icon/互动1.png"
+      }
+    ],
+    "selectedColor": "#1296db",
+    "backgroundColor": "#f7faf7"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

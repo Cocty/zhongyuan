@@ -1,0 +1,70 @@
+<!-- pages/news1/news1.wxml -->
+<view class="news_wrapper">
+  <view class="news">
+    <view class="news_image">
+      <image src="https://s1.328888.xyz/2022/07/25/Dh6uy.webp" mode="widthFix"></image>
+    </view>
+    <view class="news_title">
+      <text>四川汶川地震救灾进展情况:投入救灾金670.34亿</text>
+    </view>
+    <view class="info">
+      <view class="info_content">
+        <view class="date_icon">
+          <text class="iconfont icon-xriqi" selectable="false" space="false" decode="false"></text>
+        </view>
+        <view class="text">
+          <text>2008年08月25日</text>
+        </view>
+      </view>
+      <view class="info_content">
+        <view class="time_icon">
+          <text class="iconfont icon-xshizhong" selectable="false" space="false" decode="false"></text>
+        </view>
+        <view class="text">18:27</view>
+      </view>
+      <view class="info_content">
+        <view class="editor_icon">
+          <text class="iconfont icon-xlianxirenxuanzhong" selectable="false" space="false" decode="false"></text>
+        </view>
+        <view class="text">John Doe</view>
+      </view>
+      <view class="info_content">
+        <view class="comments_icon">
+          <text class="iconfont icon-xpinglun" selectable="false" space="false" decode="false"></text>
+        </view>
+        <view class="text">10 Comments</view>
+      </view>
+    </view>
+    <view class="news_ins">
+      <text>
+        中新网8月25日电 国务院新闻办公室25日根据国务院抗震救灾总指挥部授权发布：据民政部报告，截至25日12时，四川汶川地震已确认69226人遇难，374643人受伤，失踪17923人。
+      </text>
+    </view>
+    <view class="news_content">
+      <text>
+        据总参谋部报告，截至25日12时，抢险救灾人员已累计解救和转移1486405人。
+
+        　　据卫生部报告，截至25日12时，因地震受伤住院治疗累计96544人(不包括灾区病员人数)，已出院92827人，仍有1045人住院，其中四川转外省市伤员仍住院475人，共救治伤病员3930665人次。
+
+        　　据民政部报告，截至25日12时，向灾区调运的救灾帐篷共计157.97万顶、被子486.69万床、衣物1410.13万件、燃油327.9万吨、煤炭700.6万吨。
+
+        　　据住房城乡建设部报告，截至24日，地震灾区过渡安置房(活动板房)已安装662900套、正安装2500套、待安装1500套，生产地已发运800套、待发运1600套。
+
+        　　据中国地震局报告，21日12时至25日12时，汶川地震主震区监测到3.9级以下余震764次，无4.0级以上余震。主震区已累计监测到余震26034次。
+
+        　　据财政部报告，截至25日12时，各级政府共投入抗震救灾资金670.34亿元。中央财政投入598.02亿元，其中：应急抢险救灾资金274.82亿元，灾后恢复重建资金323.2亿元。地方财政投入72.32亿元。
+
+        　　据民政部报告，截至25日12时，全国共接收国内外社会各界捐赠款物总计592.98亿元，实际到账款物592.46亿元，已向灾区拨付捐赠款物合计253.13亿元。
+
+        　　据水利部报告，截至25日12时，受损供水管道累计48275.5公里，已修复45116.7公里。
+
+        　　据发展改革委报告，截至24日，向灾区调运的中央储备救灾粮累计出库404944吨，食用油累计出库9435吨。
+
+        　　据商务部报告，截至25日12时，四川、甘肃、陕西因灾受损商业网点(含个体工商户)总计138960家，已有127972家恢复营业。
+
+        　　据人力资源和社会保障部报告，截至25日12时，地震灾区有组织劳务输出合计180141人，本地就业合计677588人。
+      </text>
+    </view>
+  </view>
+  <notes notes="notes"></notes>
+</view>

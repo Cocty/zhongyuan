@@ -1,0 +1,9 @@
+image{
+  width: 100%
+}
+
+.title{
+ margin: 5rpx;
+ font-size: large;
+ font-style: border;
+}

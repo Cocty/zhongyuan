@@ -1,0 +1,24 @@
+/* pages/news/news.wxss */
+@import "../../style/news_style.wxss";
+.newslist_all .title {
+  font-size: large;
+  border-bottom: var(--themeColor) solid 2rpx;
+  margin: 10rpx 20rpx;
+}
+.newslist_all .newslist navigator{
+  margin:10rpx auto;
+}
+.newslist_all .newslist navigator .news_title {
+  font-size: 25rpx;
+  border-bottom: solid var(--themeColor) 2rpx;
+}
+
+.icon {
+  width: 30rpx;
+}
+
+.newslist navigator {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
