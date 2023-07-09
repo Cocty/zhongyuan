@@ -4,6 +4,7 @@ Page({
     array: ['医生', '护士', '消防员', '厨师', '救生员', '司机', '一般体力劳动者', '其他'],
     idcard_cates: ['身份证', '签证', '护照', '军人证', '港澳通行证'],
     name: "",
+    card_type:"",
     id_number: 0,
     place: "",
     email: "",
@@ -25,18 +26,49 @@ Page({
       "2022年2月26日，马先生，捐助1200"
     ]
   },
-  formSubmit(e) {
-    console.log(e);
+  formSubmit: function(e) {
+    // 构建请求参数
+    const requestData = {
+      card_type: e.detail.value.card_type,
+      email: e.detail.value.email,
+      id_number: e.detail.value.id_number,
+      job: e.detail.value.job,
+      money: e.detail.value.money,
+      name: e.detail.value.name,
+      place: e.detail.value.place,
+      sex: e.detail.value.sex
+    };
+  console.log(requestData);
+    wx.request({
+      url: 'http://localhost:3000/api/submitForm', // 服务器接口地址
+      method: 'POST',
+      data: requestData,
+      success: function(res) {
+        console.log(res.data); // 请求成功的处理逻辑
+      },
+      fail: function(err) {
+        console.error(err); // 请求失败的处理逻辑
+      }
+    });
   },
   bindPickerChange: function (e) {
-    this.setData({
-      index: e.detail.value
-    })
+    const id = e.target.id;
+    const index = e.detail.value;
+  
+    if (id === 'idcardPicker') {
+      const selectedValue = this.data.idcard_cates[index];
+      this.setData({
+        card_type: selectedValue
+      });
+    } else if (id === 'jobPicker') {
+      const selectedValue = this.data.array[index];
+      this.setData({
+        job: selectedValue
+      });
+    }
   },
   changeSex: function (e) {
-    this.setData({
-      sex: e.detail.value
-    })
+    console.log('性别选择:', e.detail.value)
   },
   /**
    * 页面的初始数据
