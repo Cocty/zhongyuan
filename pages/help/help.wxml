@@ -1,0 +1,62 @@
+<view class="textswiper_wrapper">
+  <text class="donatewall_title">捐献榜</text>
+</view>
+<text_swiper textList="{{txtlist}}"></text_swiper>
+<form bindsubmit="formSubmit">
+  <view class="main">
+    <view class="top-title">基本信息</view>
+    <view class="form-content">
+      <view class="form-item">
+        <view class="left">您的姓名</view>
+        <input class="right-input" placeholder="请输入您的真实姓名" />
+      </view>
+      <view class="form-item">
+        <view class="left">证件类型</view>
+        <picker range="{{idcard_cates}}" bindchange="bindPickerChange">
+          <view class="select-box">
+            <input class="right-input" disabled="{{true}}" value="{{idcard_cates[index]}}" placeholder="请选择证件类型" />
+          </view>
+        </picker>
+      </view>
+      <view class="form-item">
+        <view class="left">证件号</view>
+        <input class="right-input" placeholder="请输入份证件号" />
+      </view>
+      <view class="form-item">
+        <text class="left">成员性别</text>
+        <view class="sex-box">
+          <radio-group name="sex" bindchange="changeSex">
+            <radio class="radio-item" value="1" checked="checked" color="var(--themeColor)">
+              男
+            </radio>
+            <radio class="radio-item" value="2" checked="" color="var(--themeColor)">女</radio>
+          </radio-group>
+        </view>
+      </view>
+      <view class="form-item">
+        <view class="left">您的所在地</view>
+        <input class="right-input" placeholder="xx省/xx市xx区" />
+      </view>
+      <view class="form-item">
+        <view class="left">您的邮箱</view>
+        <input class="right-input" placeholder="请输入您的邮箱地址" />
+      </view>
+      <view class="form-item">
+        <view class="left">您捐款的金额</view>
+        <input class="right-input" placeholder="请输入您捐款的金额" />
+      </view>
+      <view class="form-item">
+        <view class="left">您的职业</view>
+        <picker range="{{array}}" bindchange="bindPickerChange">
+          <view class="select-box">
+            <input class="right-input" disabled="{{true}}" value="{{array[index]}}" placeholder="请选择您的职业" />
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <button class="save-btn" form-type="submit">保存</button>
+    <button class="save-btn" form-type="submit">提交</button>
+  </view>
+</form>

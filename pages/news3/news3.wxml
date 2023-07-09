@@ -1,0 +1,52 @@
+<!--pages/news1/news1.wxml-->
+<view class="news_wrapper">
+  <view class="news">
+    <view class="news_image">
+      <image src="https://s1.328888.xyz/2022/07/25/DhToC.jpg" mode="widthFix"></image>
+    </view>
+    <view class="news_title">
+      <text>国家卫健委：我国疫情防控取得阶段性重要成果
+      </text>
+    </view>
+    <view class="info">
+      <view class="info_content">
+        <view class="date_icon">
+          <image src="https://s1.328888.xyz/2022/07/29/Ddqtn.png" mode="widthFix"></image>
+        </view>
+        <view class="text">
+          <text>2020-03-13 </text>
+        </view>
+      </view>
+      <view class="info_content">
+        <view class="time_icon">
+          <image src="https://s1.328888.xyz/2022/07/29/DdXds.png" mode="widthFix">
+          </image>
+        </view>
+        <view class="text">15:29
+        </view>
+      </view>
+      <view class="info_content">
+        <view class="editor_icon">
+          <image src="https://s1.328888.xyz/2022/07/29/DdHmg.png" mode="widthFix">
+          </image>
+        </view>
+        <view class="text">John Doe
+        </view>
+      </view>
+      <view class="info_content">
+        <view class="comments_icon">
+          <image src="https://s1.328888.xyz/2022/07/29/Ddp1h.png" mode="widthFix"></image>
+        </view>
+        <view class="text">10 Comments
+        </view>
+      </view>
+    </view>
+    <view class="news_ins">
+      <text>3月13日下午，国务院联防联控机制就应对疫情影响做好稳外贸稳外资工作情况举行发布会。</text>
+    </view>
+    <view class="news_content">
+      <text>　国家卫生健康委新闻发言人、宣传司副司长米锋表示，除湖北以外，其他省份新增确诊病例3例，全部为境外输入病例，新增疑似病例32例，新增死亡病例1例，重症病例减少5例。截至3月12日，有21个省份和新疆生产建设兵团超过14天无新增本土确诊病例，6个省份超过1周无新增本土确诊病例。我国疫情防控形势继续积极向好，取得阶段性重要成果。</text>
+    </view>
+  </view>
+  <notes notes="notes"></notes>
+</view>

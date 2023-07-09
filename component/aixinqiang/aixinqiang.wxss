@@ -1,0 +1,56 @@
+/* component/aixinqiang.wxss */
+.wrapper_loveWall {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+.lovewall_item {
+  border-radius: 20rpx;
+  background-color: white;
+  margin: 10rpx;
+}
+
+.lovewall_item image {
+  border-radius: 20rpx;
+}
+
+.lovewall_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+
+.loveWall {
+  margin: 20rpx 20rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.loveWall .lovewall_content {
+  height: 160px;
+}
+
+.lovewall_indeed_wrapper {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.lovewall_indeed {
+  text-align: center;
+  line-height: 100rpx;
+  width: 200rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  background-color: var(--themeColor);
+  margin: 10rpx auto;
+  color: white;
+}

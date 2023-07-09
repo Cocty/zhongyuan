@@ -1,0 +1,19 @@
+<swiper autoplay circular indicator-dots="true">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image mode="widthFix" src="{{item.src}}"></image>
+  </swiper-item>
+</swiper>
+<view class="loveWall">
+  <view class="loveWall_title">爱心墙</view>
+  <view class="loveWall_instr">因为有你们，灾难变得不再可怕，谢谢你们以及和你们一样的无数好心人</view>
+  <view class="loveWall_content">
+    <aixinqiang srcList="{{loveWallList}}"></aixinqiang>
+  </view>
+</view>
+<view class="news">
+  <view class="new_txt">新闻展示</view>
+  <view class="news_en">Tips&News</view>
+</view>
+<view class="news_content">
+  <news newsList="{{newsList}}"></news>
+</view>

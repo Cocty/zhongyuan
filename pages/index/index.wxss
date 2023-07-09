@@ -1,0 +1,50 @@
+/**index.wxss**/
+
+
+image {
+  width: 100%;
+}
+
+swiper {
+  width: 100%;
+  height: calc(100vw * 680 / 1600);
+}
+
+.loveWall {
+  background-color: var(--themeColor);
+  padding: 10rpx 0;
+}
+
+.loveWall .loveWall_title {
+  color: white;
+  margin: 10rpx auto;
+  display: flex;
+  font-size: large;
+  justify-content: center;
+}
+
+.loveWall .loveWall_instr {
+  color: white;
+  font-size: 20rpx;
+  display: flex;
+  justify-content: center;
+  padding: 10rpx 0;
+}
+
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_txt {
+  font-size: large;
+}
+
+.news_en {
+  color: var(--themeColor);
+  border-bottom: 5rpx solid var(--themeColor);
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,2 @@
+@import "../../style/news_style.wxss";
+@import "../../style/iconfont.wxss";
