@@ -2,7 +2,7 @@
 <view class="news_wrapper">
   <view class="news">
     <view class="news_image">
-      <image src="https://s1.328888.xyz/2022/07/25/DhwJR.jpg" mode="widthFix"></image>
+      <image src="../../images/news2.jpg" mode="widthFix"></image>
     </view>
     <view class="news_title">
       <text>重建迅速 防疫有力——河南洪涝受灾地救灾防疫进展见闻
@@ -11,7 +11,7 @@
     <view class="info">
       <view class="info_content">
         <view class="date_icon">
-          <image src="https://s1.328888.xyz/2022/07/29/Ddqtn.png" mode="widthFix"></image>
+          <text class="iconfont icon-xriqi" selectable="false" space="false" decode="false"></text>
         </view>
         <view class="text">
           <text>2021-08-04 </text>
@@ -19,23 +19,21 @@
       </view>
       <view class="info_content">
         <view class="time_icon">
-          <image src="https://s1.328888.xyz/2022/07/29/DdXds.png" mode="widthFix">
-          </image>
+          <text class="iconfont icon-xshizhong" selectable="false" space="false" decode="false"></text>
         </view>
         <view class="text">01:44
         </view>
       </view>
       <view class="info_content">
         <view class="editor_icon">
-          <image src="https://s1.328888.xyz/2022/07/29/DdHmg.png" mode="widthFix">
-          </image>
+          <text class="iconfont icon-xlianxirenxuanzhong" selectable="false" space="false" decode="false"></text>
         </view>
         <view class="text">房家梁
         </view>
       </view>
       <view class="info_content">
         <view class="comments_icon">
-          <image src="https://s1.328888.xyz/2022/07/29/Ddp1h.png" mode="widthFix"></image>
+          <text class="iconfont icon-xpinglun" selectable="false" space="false" decode="false"></text>
         </view>
         <view class="text">10 Comments
         </view>

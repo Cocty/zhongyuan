@@ -2,7 +2,7 @@
 <view class="news_wrapper">
   <view class="news">
     <view class="news_image">
-      <image src="https://s1.328888.xyz/2022/07/25/Dh6uy.webp" mode="widthFix"></image>
+      <image src="../../images/news1.jpg" mode="widthFix"></image>
     </view>
     <view class="news_title">
       <text>四川汶川地震救灾进展情况:投入救灾金670.34亿</text>
