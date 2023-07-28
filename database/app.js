@@ -7,10 +7,10 @@ const port = 3000;
 
 // 创建与MySQL数据库的连接
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '123456',
-    database: 'zhongyuan'
+  host: 'localhost',
+  user: 'root',
+  password: '123456',
+  database: 'zhongyuan'
 });
 
 // 连接到MySQL数据库
@@ -72,7 +72,32 @@ app.post('/api/submitForm', (req, res) => {
   });
 });
 
-// 启动服务器
-app.listen(port, () => {
-    console.log(`服务器正在监听端口 ${port}`);
+app.get('/api/getData', (req, res) => {
+  // 查询数据库获取捐赠数据
+  connection.query('SELECT donate.donate_time, donor.name, donor.sex, donate.money FROM donate INNER JOIN donor ON donate.donorid = donor.id', (error, results) => {
+    if (error) throw error;
+
+    const txtlist = results.map((row) => {
+      const date = new Date(row.donate_time);
+
+      const year = date.getFullYear(); // 获取年份
+      const month = date.getMonth() + 1; // 获取月份，注意要加1，因为月份从0开始计数
+      const day = date.getDate(); // 获取日期
+      const name = row.name;
+      const gender = row.sex === 1 ? '先生' : '女士'; // 根据性别确定称呼
+      const amount = row.money + '元';
+
+      return `${year}年${month}月${day}日, ${name}${gender}, 捐赠${amount}`;
+    });
+
+    res.json(txtlist);
   });
+});
+
+app.listen(port, () => {
+  try {
+    console.log(`服务器正在监听端口 ${port}`);
+  } catch (error) {
+    console.error('服务器发生异常:', error);
+  }
+});
