@@ -81,7 +81,7 @@ Page({
     // 提交成功，显示提示信息并清空表单
     wx.showToast({
       title: '提交成功',
-      icon: 'success'
+      icon: 'success' 
     });
 
     // 延迟一定时间后再进行页面跳转
